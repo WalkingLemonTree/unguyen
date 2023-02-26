@@ -1,0 +1,61 @@
+@import "../fonts/fira_sans/fira.css";
+@import "../fonts/merriweather/merriweather.css";
+
+body {
+	font-family: "Fira Sans", sans-serif;
+	color: #424242;
+	background: #adc6f8;
+	margin: 0;
+	font-size: 2em;
+	max-width: 100vw;
+	min-height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	flex: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: Merriweather, Constantia, Cambria, Georgia, Times, "Times New Roman", serif;
+	font-weight: 400;
+}
+
+p {
+	font-size: large;
+}
+
+/* Custom */
+
+.panel {
+	background-color: ghostwhite;
+	margin: 3rem 0;
+}
+
+.elevate {
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+/* Glider overrides */
+.glider-dot {
+	background: #adc6f8;
+}
+
+.glider-dot.active {
+	background: #6982f8;
+}
+
+/* Glider bootstrap overrides */
+
+.glider-arrow {
+	border: none;
+	background: none;
+	color: #adc6f8;
+}
