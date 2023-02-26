@@ -100,7 +100,7 @@
 					</div>
 				</div>
 			</div>
-			<a class="btn btn-outline-primary fs-5" href=".">View my full CV here</a>
+			<!-- <a class="btn btn-outline-primary fs-5" href=".">View my full CV here</a> -->
 		</div>
 		<a class="btn-next" href="#testimonials">↓</a>
 	</div>
