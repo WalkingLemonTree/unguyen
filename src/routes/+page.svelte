@@ -50,7 +50,7 @@
 	<!-- About -->
 	<div id="about" class="panel my-6 p-3 text-center">
 		<div class="container-sm my-3">
-			<img class="circle py-3" src="%sveltekit.assets%/images/me.jpg" alt="Potrait of me" />
+			<img class="circle py-3" src="/images/me.jpg" alt="Potrait of me" />
 			<h1 class="py-3">Get to know me</h1>
 			<p class="fs-5">
 				I have over two years of working experience in the UK and Vietnam, mainly in managing
