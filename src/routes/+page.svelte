@@ -235,32 +235,7 @@
 	<div id="contact" class="panel my-6 p-3 text-center">
 		<div class="container-sm my-3">
 			<h1>Contact</h1>
-			<form action="" method="post" class="text-start fs-5">
-				<div class="mb-3">
-					<label for="name" class="form-label">Name</label>
-					<input type="text" class="form-control" id="name" name="name" required />
-				</div>
-				<div class="mb-3">
-					<label for="email" class="form-label">Email</label>
-					<input type="email" class="form-control" id="email" name="email" required />
-				</div>
-				<div class="mb-3">
-					<label for="message" class="form-label">Message</label>
-					<textarea
-						class="form-control"
-						id="message"
-						name="message"
-						rows="8"
-						maxlength="2048"
-						required
-					/>
-					<span id="contact-notice" class="form-text fs-6">
-						Information supplied in this form is shared directly and does not go to 3rd party
-						services.
-					</span>
-				</div>
-				<button type="submit" class="form-control-lg btn btn-primary w-100">Submit</button>
-			</form>
+			
 		</div>
 	</div>
 </div>
