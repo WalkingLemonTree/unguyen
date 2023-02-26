@@ -1,7 +1,5 @@
 <script lang="ts">
-	import "bootstrap/dist/css/bootstrap.min.css";
-	import "glider-js/glider.min.css";
-	import "$lib/styles/custom.css";
+	import "$lib/styles/custom.scss";
 
 	import { onMount } from "svelte";
 	import Glider from "glider-js";
@@ -18,6 +16,7 @@
 			scrollLock: true,
 			draggable: true,
 			dots: "#resp-dots",
+			rewind: true,
 			arrows: {
 				prev: prevArrow,
 				next: nextArrow
@@ -35,6 +34,10 @@
 			]
 		});
 	});
+
+	function functionforscroll(event: CustomEvent<string>) {
+		window.scrollTo(0, document.getElementById(event.detail)?.offsetTop ?? 0);
+	};
 </script>
 
 <div class="container-md p-0">
@@ -45,6 +48,7 @@
 			<h2 class="subtitle">or you can call me Lily :)</h2>
 		</div>
 		<a class="btn-next" href="#about">↓</a>
+		<!-- <button class="btn-next" on:click={functionforscroll}>Button Name</button> -->
 	</div>
 
 	<!-- About -->
@@ -74,7 +78,7 @@
 			<h1>Experiences</h1>
 			<div class="container-sm py-3 fs-5 text-start">
 				<div class="row my-3 py-3">
-					<div class="col">August 2021 - December 2022</div>
+					<div class="col">August&nbsp;2021 - December&nbsp;2022</div>
 					<div class="col">
 						Project Account Manager <br />
 						Quadrant2design <br />
@@ -82,7 +86,7 @@
 					</div>
 				</div>
 				<div class="row my-3 py-3">
-					<div class="col">December 2017 - August 2019</div>
+					<div class="col">December&nbsp;2017 - August&nbsp;2019</div>
 					<div class="col">
 						Event Account Executive <br />
 						Asia Pacific Talent Youth Training Centre <br />
@@ -90,7 +94,7 @@
 					</div>
 				</div>
 				<div class="row my-3 py-3">
-					<div class="col">August 2021 - December 2022</div>
+					<div class="col">August&nbsp;2017 - November&nbsp;2017</div>
 					<div class="col">
 						Account Executive Intern <br />
 						Happiness Saigon <br />
@@ -257,13 +261,13 @@
 						services.
 					</span>
 				</div>
-				<button type="submit" class=" form-control-lg btn btn-primary w-100">Submit</button>
+				<button type="submit" class="form-control-lg btn btn-primary w-100">Submit</button>
 			</form>
 		</div>
 	</div>
 </div>
 
-<style>
+<style lang="scss">
 	.container-sm {
 		max-width: 720px;
 	}
@@ -282,7 +286,14 @@
 	}
 
 	.btn-next {
-		color: #adc6f8;
+		color: #6982f8;
 		text-decoration: none;
+	}
+
+	/* Glider bootstrap overrides */
+	.glider-arrow {
+		border: none;
+		background: none;
+		color: #6982f8;
 	}
 </style>

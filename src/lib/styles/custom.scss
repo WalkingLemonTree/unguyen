@@ -1,5 +1,15 @@
-@import "../fonts/fira_sans/fira.css";
-@import "../fonts/merriweather/merriweather.css";
+@import "glider-js/glider.min.css";
+@import "/fonts/fira_sans/fira.css";
+@import "/fonts/merriweather/merriweather.css";
+
+// Override Bootstrap variables FIRST
+$primary: #6982f8;
+
+// THEN import bootstrap
+@import "bootstrap/scss/bootstrap";
+// AFTER add global customisations
+
+// General Stuff
 
 body {
 	font-family: "Fira Sans", sans-serif;
@@ -49,13 +59,5 @@ p {
 }
 
 .glider-dot.active {
-	background: #6982f8;
-}
-
-/* Glider bootstrap overrides */
-
-.glider-arrow {
-	border: none;
-	background: none;
-	color: #adc6f8;
+	background: $primary;
 }
