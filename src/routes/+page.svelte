@@ -52,7 +52,7 @@
 	<!-- About -->
 	<div id="about" class="panel my-6 p-3 text-center">
 		<div class="container-sm my-3">
-			<img class="circle py-3" src="images/me.jpg" alt="Potrait of me" />
+			<img class="portrait py-3" src="images/me.jpg" alt="Potrait of me" />
 			<h1 class="py-3">Get to know me</h1>
 			<p class="fs-5">
 				I have over two years of working experience in the UK and Vietnam, mainly in managing
@@ -254,8 +254,10 @@
 		padding: 1rem 0 2rem;
 	}
 
-	.circle {
+	.portrait {
 		border-radius: 50%;
+		width: 300px;
+		max-width: 100%;
 	}
 
 	.btn-next {
