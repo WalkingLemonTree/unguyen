@@ -1,6 +1,4 @@
 <script lang="ts">
-	import "$lib/styles/custom.scss";
-
 	import { onMount } from "svelte";
 	import Glider from "glider-js";
 
@@ -37,7 +35,7 @@
 
 	function functionforscroll(event: CustomEvent<string>) {
 		window.scrollTo(0, document.getElementById(event.detail)?.offsetTop ?? 0);
-	};
+	}
 </script>
 
 <div class="container-md p-0">
