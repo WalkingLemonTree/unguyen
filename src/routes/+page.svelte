@@ -32,25 +32,20 @@
 			]
 		});
 	});
-
-	function functionforscroll(event: CustomEvent<string>) {
-		window.scrollTo(0, document.getElementById(event.detail)?.offsetTop ?? 0);
-	}
 </script>
 
 <div class="container-md p-0">
 	<!-- Title -->
-	<div id="title" class="panel my-6 p-3 text-center">
+	<div id="title" class="panel my-0 p-3 text-center">
 		<div class="container-sm my-3">
 			<h1 class="title">Hello,<br />I'm Uyen.</h1>
 			<h2 class="subtitle">or you can call me Lily :)</h2>
 		</div>
 		<a class="btn-next" href="#about">↓</a>
-		<!-- <button class="btn-next" on:click={functionforscroll}>Button Name</button> -->
 	</div>
 
 	<!-- About -->
-	<div id="about" class="panel my-6 p-3 text-center">
+	<div id="about" class="panel my-3 p-3 text-center">
 		<div class="container-sm my-3">
 			<img class="portrait py-3" src="images/me.jpg" alt="Potrait of me" />
 			<h1 class="py-3">Get to know me</h1>
@@ -71,7 +66,7 @@
 	</div>
 
 	<!-- Experiences -->
-	<div id="experiences" class="panel my-6 p-3 text-center">
+	<div id="experiences" class="panel my-3 p-3 text-center">
 		<div class="container-sm my-3">
 			<h1>Experiences</h1>
 			<div class="container-sm py-3 fs-5 text-start">
@@ -106,7 +101,7 @@
 	</div>
 
 	<!-- Testimonials -->
-	<div id="testimonials" class="panel my-6 p-3 text-center">
+	<div id="testimonials" class="panel my-3 p-3 text-center">
 		<div class="container-sm my-3">
 			<h1>Testimonials</h1>
 			<div class="position-relative">
@@ -232,10 +227,9 @@
 	</div>
 
 	<!-- Contact -->
-	<div id="contact" class="panel my-6 p-3 text-center">
+	<div id="contact" class="panel my-3 p-3 text-center">
 		<div class="container-sm my-3">
 			<h1>Contact</h1>
-			
 		</div>
 	</div>
 </div>

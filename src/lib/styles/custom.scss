@@ -4,12 +4,17 @@
 
 // Override Bootstrap variables FIRST
 $primary: #6982f8;
+$light: #adc6f8;
 
 // THEN import bootstrap
 @import "bootstrap/scss/bootstrap";
 // AFTER add global customisations
 
 // General Stuff
+
+html {
+	scroll-padding-top: 3.5rem;
+}
 
 body {
 	font-family: "Fira Sans", sans-serif;
@@ -19,7 +24,6 @@ body {
 	font-size: 2em;
 	max-width: 100vw;
 	min-height: 100vh;
-
 	display: flex;
 	flex-direction: column;
 }
