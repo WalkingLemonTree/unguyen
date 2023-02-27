@@ -13,6 +13,7 @@
 			slidesToScroll: 1,
 			scrollLock: true,
 			draggable: true,
+			dragVelocity: 1.5,
 			dots: "#resp-dots",
 			rewind: true,
 			arrows: {
@@ -45,7 +46,7 @@
 	</div>
 
 	<!-- About -->
-	<div id="about" class="panel my-3 p-3 text-center">
+	<div id="about" class="panel my-6 p-3 text-center">
 		<div class="container-sm my-3">
 			<img class="portrait py-3" src="images/me.jpg" alt="Potrait of me" />
 			<h1 class="py-3">Get to know me</h1>
@@ -66,7 +67,7 @@
 	</div>
 
 	<!-- Experiences -->
-	<div id="experiences" class="panel my-3 p-3 text-center">
+	<div id="experiences" class="panel my-6 p-3 text-center">
 		<div class="container-sm my-3">
 			<h1>Experiences</h1>
 			<div class="container-sm py-3 fs-5 text-start">
@@ -101,7 +102,7 @@
 	</div>
 
 	<!-- Testimonials -->
-	<div id="testimonials" class="panel my-3 p-3 text-center">
+	<div id="testimonials" class="panel my-6 p-3 text-center">
 		<div class="container-sm my-3">
 			<h1>Testimonials</h1>
 			<div class="position-relative">
@@ -227,9 +228,16 @@
 	</div>
 
 	<!-- Contact -->
-	<div id="contact" class="panel my-3 p-3 text-center">
+	<div id="contact" class="panel my-6 p-3 text-center">
 		<div class="container-sm my-3">
 			<h1>Contact</h1>
+
+			<a target="_blank" rel="me noreferrer" href="https://uk.linkedin.com/in/uyen-nguyen-809a9315b">
+				<img class="social-logo" src="images/LinkedIn.svg" alt="LinkedIn Logo" />
+			</a>
+			<a target="_blank" rel="me noreferrer" href="https://www.instagram.com/walkinglemontree/">
+				<img class="social-logo" src="images/instagram-colour.svg" alt="Instagram Logo" /></a
+			>
 		</div>
 	</div>
 </div>
@@ -257,6 +265,10 @@
 	.btn-next {
 		color: #6982f8;
 		text-decoration: none;
+	}
+
+	.social-logo {
+		height: 3rem;
 	}
 
 	/* Glider bootstrap overrides */
